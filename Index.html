@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="flag-container">
+        <img src="https://flagcdn.com/ke.svg" alt="Kenya Flag" class="kenya-flag">
+        <p class="flag-slogan">Julisha Mkenya Mwenzako</p>
+    </div>
+
+    <div class="header-section">
+        <h1 class="main-title">🚨 EMERGENCY ALERT</h1>
+        <p class="tagline">Save Your Neighbor, Save Lives</p>
+        <p class="motto">Together We Respond. Together We Save.</p>
+        <div class="slogans">
+            <span class="slogan">✓ Respond Fast, Save Lives</span>
+            <span class="slogan">✓ One Community, One Voice</span>
+            <span class="slogan">✓ United We Stand</span>
+            <span class="slogan">✓ Watch Over Your City</span>
+        </div>
+    </div>
+
+    <div class="vision-box">
+        <h2>Our Vision</h2>
+        <p>Building resilient communities through rapid emergency response and neighbor-to-neighbor support.</p>
+    </div>
+
+    <div class="container">
+        <h1>📋 Report an Emergency</h1>
+
+        <div id="current-time"
+            style="text-align: center; font-size: 14px; color: #38bdf8; margin-bottom: 1rem; font-weight: bold;">
+            ⏰ --:--:-- --
+        </div>
+
+        <form id="reportForm">
+
+            <label>Incident Type</label>
+            <select id="type">
+                <option>Accident</option>
+                <option>Fire</option>
+                <option>Flood</option>
+                <option>Other</option>
+            </select>
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Describe what is happening..."></textarea>
+
+            <label>Upload Photo/Video</label>
+            <input type="file" id="media" accept="image/*,video/*">
+
+            <button type="button" onclick="getLocation()">📍 Get Location</button>
+            <p id="location"></p>
+
+            <button type="submit">Submit Report</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

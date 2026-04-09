@@ -1,0 +1,218 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1a2332 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* Kenya Flag Container */
+.flag-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    animation: slideDown 0.6s ease forwards;
+}
+
+.kenya-flag {
+    width: 120px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 0.5rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    border-radius: 6px;
+}
+
+.flag-slogan {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    margin: 0;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.4);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+    text-align: center;
+    color: #38bdf8;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+textarea,
+select,
+input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    background: #334155;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    background: #3f4752;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+#location {
+    margin-top: 0.5rem;
+    color: #10b981;
+    font-weight: 500;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.4);
+}
+
+/* Header Section Styling */
+.header-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #fef3c7;
+}
+
+.motto {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 1rem 0;
+    color: #fecaca;
+    line-height: 1.5;
+}
+
+.slogans {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.slogan {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    animation: slideIn 0.8s ease forwards;
+}
+
+.slogan:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.slogan:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.slogan:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.slogan:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Vision Box */
+.vision-box {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+    text-align: center;
+}
+
+.vision-box h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #ecfdf5;
+}
+
+.vision-box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d1fae5;
+}
