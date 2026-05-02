@@ -280,6 +280,13 @@ For issues or questions:
 
 ---
 
+## Developer
+
+👨‍💻 **Kevin Kiprotich** - Software Developer  
+GitHub: [@kevinkiprotichtoo](https://github.com/kevinkiprotichtoo)
+
+---
+
 ## License
 MIT License - Feel free to modify and distribute
 
